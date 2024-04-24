@@ -109,8 +109,9 @@ for (let i = 0; i < nCircles; i++) {
     let randomX = Math.random() * window_width;
     let randomY = Math.random() * window_height;
     let randomRadius = Math.floor(Math.random() * 100 + 20);
+    let randomSpeed = Math.floor(Math.random() * 10 + 1);
 
-    let miCirculo = new Circle(randomX, randomY, randomRadius, 'blue', 'tec' + (i + 1), 3);
+    let miCirculo = new Circle(randomX, randomY, randomRadius, 'blue', 'tec' + (i + 1), randomSpeed);
     circles.push(miCirculo);
 }
 
